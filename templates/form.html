@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Barbora's App</title>
+    <link rel="stylesheet" type="text/cs"s href="{{ url_for('static',filename='style.css') }}">
+
+    <!--[if lt IE 9]>
+    <script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class=page>    
+        <div class=form>
+        <h1>Select the researchers' names:</h1>
+        <form method="post" action="main" > 
+            <p>First name:          
+            <input type="text" name="a1_first_name" placeholder="B">
+            </p>
+            <p>Last name: 
+            <input type="text" name="a1_last_name" placeholder="Doslikova">
+            </p>
+            <p>First name:        
+            <input type="text" name="a2_first_name" placeholder="MC">
+            </p>
+            <p>Last name: 
+            <input type="text" name="a2_last_name" placeholder="Marx">
+            </p>
+            <p>
+            <input type="submit" value="Submit">
+            </p>
+        </form>        
+        </div>
+    </div>    
+</body>
+</html>
